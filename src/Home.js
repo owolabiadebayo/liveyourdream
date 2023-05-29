@@ -5,12 +5,12 @@ function Home() {
   return (
     <>
       {" "}
-      <nav class="navbar navbar-expand-lg navbar-light navbar-transparent ">
-        <div class="container-fluid">
-          <img
+      <nav class="navbar navbar-expand-lg navbar-light navbar-transparent" >
+        <div class="container-fluid align-items-center d-flex justify-content-between" >
+          <img 
             src="./images/logo.jpg"
             className="rounded-circle"
-            style={{ width: "100px" }}
+            style={{ width: "70px", marginLeft: "4rem"}}
             alt=""
           />
           <button
@@ -28,17 +28,17 @@ function Home() {
         <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mx-5 mb-2 mb-lg-0">
             <li class="nav-item">
-              <Link class="nav-link text-white fs-4" aria-current="page" to="/">
+              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link text-white fs-4" to="/about">
+              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" to="/about">
                 About
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link text-white fs-4" to="/contact">
+              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" to="/contact">
                 Contact
               </Link>
             </li>
@@ -46,7 +46,7 @@ function Home() {
             <li class="nav-item mx-5">
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button
-                  class="btn fs-5 py-2 px-3 text-white me-md-2"
+                  class="btn fs-5 py-2 px-4 py-3 text-white m-md-2"
                   style={{ backgroundColor: "#e7077d" }}
                   type="button"
                 >
@@ -58,29 +58,30 @@ function Home() {
         </div>
       </nav>
       <div
-        style={{ height: "50vh" }}
+        // style={{ height: "700px" }}
         id="carouselExampleCaptions"
         class="carousel slide w-100"
         data-bs-ride="carousel"
       >
         <div
+        
           id="carouselExampleControls"
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div class="carousel-inner" >
+            <div class="carousel-item active" >
               <div
                 style={{
                   backgroundImage: `url("./images/1.jpg")`,
-                  opacity: "0.9",
+                  opacity: 0.9
                 }}
                 class="d-flex row justify-content-end py-5"
               >
                 <div class="col-md-2"></div>
                 <div class="col-md-8 py-5" style={{ opacity: 1 }}>
                   <div class="row">
-                    <h1 class="text-white m-3 col-6">
+                    <h1 class="text-white m-3 col-8">
                       Nigeria's Premium Online Casting Platforms
                     </h1>
                   </div>
@@ -105,14 +106,14 @@ function Home() {
               <div
                 style={{
                   backgroundImage: `url("./images/2.jpg")`,
-                  opacity: 0.9,
+                  opacity: 0.9
                 }}
                 class="d-flex row justify-content-end py-5"
               >
                 <div class="col-md-2"></div>
                 <div class="col-md-8 py-5" style={{ opacity: 1 }}>
                   <div class="row">
-                    <h1 class="text-white m-3 col-6">
+                    <h1 class="text-white m-3 col-8">
                       Nigeria's Premium Online Casting Platforms
                     </h1>
                   </div>
@@ -144,7 +145,7 @@ function Home() {
                 <div class="col-md-2"></div>
                 <div class="col-md-8 py-5" style={{ opacity: 1 }}>
                   <div class="row">
-                    <h1 class="text-white m-3 col-6">
+                    <h1 class="text-white m-3 col-8">
                       Nigeria's Premium Online Casting Platforms
                     </h1>
                   </div>
@@ -188,17 +189,17 @@ function Home() {
       </div>
       <div
         class="card text-center rounded-0"
-        style={{ backgroundColor: "#e7077d" }}
+        style={{ backgroundColor: "#e7077d"}}
       >
-        <div class="card-body col-9 mx-auto py-5">
+        <div class="card-body d-grid align-items-center col-10 mx-auto py-5" style={{ maxWidth: "70%", height:"75vh"}}>
           <h5 class="card-title text-white fs-1">What Makes Us Different?</h5>
-          <p class="card-text text-white text-align-center fs-5 py-4">
+          <p class="card-text text-white m-0 text-align-center fs-5 py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui alias
             saepe, omnis aspernatur soluta labore sed eaque maxime dolore
             voluptates facilis ipsam adipisci animi reiciendis ad ab corporis
             deleniti aperiam.
           </p>
-          <Link to="#" class="btn btn-outline-light fs-5">
+          <Link to="#" class="btn btn-outline-light mb-5 fs-5 text-center">
             Get Started Now
           </Link>
         </div>
@@ -208,62 +209,66 @@ function Home() {
         style={{ backgroundColor: "indigo" }}
       >
         <p>
-          <i class="fa-solid fa-camera-movie" style={{ color: "#ffffff" }}></i>
+        <i class="fa-solid fs-1 fa-camera" style={{ color: "#ffffff"}}></i>
         </p>
         <h1 class="card-title py-4 text-white">Featured Auditions</h1>
       </div>
       <div class="row w-90 mx-auto mt-4 mb-5">
-        <div class="col-sm-4">
-          <div class="card mb-4" style={{ backgroundColor: "indigo" }}>
-            <div class="card-body text-center">
+        <div class="col-sm-4 py-3">
+          <div class="card mb-4 py-3" style={{ backgroundColor: "indigo" }}>
+            <div class="card-body text-center py-3">
               <p>
                 <i
-                  class="fa-solid fa-computer"
+                  class="fa-solid fs-1 fa-computer py-3"
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white">Jump the Queue</h5>
-              <p class="card-text text-white">
+              <h5 class="card-title text-white py-3">Jump the Queue</h5>
+              <p class="card-text text-white py-3">
                 Create an account in Minutes, get visible ....
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card bg-info mb-4">
-            <div class="card-body text-center">
+        <div class="col-sm-4 py-3">
+          <div class="card bg-info mb-4 py-3">
+            <div class="card-body text-center py-3">
               <p>
-                <i class="fa-solid fa-people" style={{ color: "#ffffff" }}></i>
+              <i class="fa-solid fs-1 fa-person py-3"style={{color: "#ffffff",}}></i>
+         
+        
               </p>
-              <h5 class="card-title text-white">
+              <h5 class="card-title text-white py-3">
                 Get Represented by the Experts
               </h5>
-              <p class="card-text text-white">
+              <p class="card-text text-white py-3">
                 In need of an agent or manager?
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card mb-4" style={{ backgroundColor: "#e7077d" }}>
-            <div class="card-body text-center">
+        <div class="col-sm-4 py-3">
+          <div class="card mb-4 py-3" style={{ backgroundColor: "#e7077d" }}>
+            <div class="card-body text-center py-3">
               <p>
                 <i
-                  class="fa-solid fa-layer-group"
+                  class="fa-solid fs-1 fa-layer-group py-3"
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white">Cut through the Cluster</h5>
-              <p class="card-text text-white">
+              <h5 class="card-title text-white py-3">Cut through the Cluster</h5>
+              <p class="card-text text-white py-3">
                 Find the perfect talent with ease and convenience.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="card mb-5 mx-auto mt-5" style={{ maxWidth: "100%" }}>
+      <div  class="row gy-5 w-100 mx-auto mb-0"
+          style={{ backgroundColor: "#e7077d" }}>
+      <div class="card mb-5 mx-auto mt-5" style={{ maxWidth: "80%" }}>
         <div
-          class="row gy-5 w-90 mx-auto mb-5"
+          class="row gy-5 w-100 mx-auto"
           style={{ backgroundColor: "#e7077d" }}
         >
           <div class="col-md-4">
@@ -274,11 +279,11 @@ function Home() {
             />
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body d-grid">
               <p>
                 <i
                   class="fa-solid fa-layer-group"
-                  style={{ color: "#ffffff" }}
+                  style={{ color: "#ffffff", fontSize:"3rem" }}
                 ></i>
               </p>
               <h5 class="card-title text-white fs-3">
@@ -297,13 +302,17 @@ function Home() {
           </div>
         </div>
       </div>
-      <div class="card mb-3 mx-auto" style={{ maxWidth: "100%" }}>
+
+      </div>
+      <div class="row gy-5 w-100 mx-auto mt-4" style={{ backgroundColor: "indigo" }}>
+      <div class="card mb-3 mx-auto" style={{ maxWidth: "80%" }}>
         <div
-          class="row gy-5 w-90 mx-auto"
+          class="row gy-5 w-100 mx-auto"
           style={{ backgroundColor: "indigo" }}
         >
-          <div class="col-md-8">
-            <div class="card-body">
+          
+          <div class="col-md-7">
+            <div class="card-body d-grid">
               <h5 class="card-title text-white fs-3">
                 What would you want us to improve on?
               </h5>
@@ -327,13 +336,15 @@ function Home() {
           </div>
         </div>
       </div>
+
+      </div>
       <footer style={{ backgroundColor: "indigo" }}>
         <section class="section p-5">
           <div>
             <div class="container">
               <div class="row align-items-center justify-content-md-between">
                 <div class="col-md-6">
-                  <ul class="nav nav-footer">
+                  <ul class="nav nav-footer text-center justify-content-center">
                     <li class="nav-item">
                       {" "}
                       <Link
@@ -363,12 +374,12 @@ function Home() {
                       </Link>
                     </li>
                   </ul>
-                  <div class="copyright text-white">
+                  <div class="copyright text-center text-white">
                     Copyright © 2023 Cast.i.ng All Rights Reserved
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <ul class="nav nav-footer justify-content-end">
+                  <ul class="nav nav-footer mt-3 justify-content-center">
                     <li class="nav-item">
                       <Link
                         to="http://"
@@ -376,7 +387,7 @@ function Home() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-twitter"
+                          class="fa-brands fs-1 fa-twitter"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>
@@ -388,7 +399,7 @@ function Home() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-instagram"
+                          class="fa-brands fs-1 fa-instagram"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>
@@ -400,7 +411,7 @@ function Home() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-linkedin-in"
+                          class="fa-brands fs-1 fa-linkedin-in"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>
@@ -412,7 +423,7 @@ function Home() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-facebook-f"
+                          class="fa-brands fs-1 fa-facebook-f"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>

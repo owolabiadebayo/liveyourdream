@@ -26,127 +26,190 @@ function Contact() {
   };
   return (
     <>
-      <div
-        style={{ height: "60px" }}
-        id="carouselExampleCaptions"
-        class="carousel slide bg-warning w-100"
-        data-bs-ride="carousel"
-      >
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-          <div class="container-fluid">
-            <img src="./logo.jpg" width="50" height="50" alt="" />
-            <button
-              class="navbar-toggler text-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon text-white"></span>
-            </button>
-          </div>
-          <div
-            class="collapse navbar-collapse col-6"
-            id="navbarSupportedContent"
+     <nav class="navbar navbar-expand-lg navbar-light navbar-transparent" >
+        <div class="container-fluid align-items-center d-flex justify-content-between" >
+          <img 
+            src="./images/logo.jpg"
+            className="rounded-circle"
+            style={{ width: "70px", marginLeft: "4rem"}}
+            alt=""
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <ul class="navbar-nav me-auto mx-5 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link
-                  class="nav-link text-white fs-4"
-                  aria-current="page"
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link text-white fs-4" to="/about">
-                  About
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link text-white fs-4" to="/contact">
-                  Contact
-                </Link>
-              </li>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mx-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" aria-current="page" to="/">
+                Home
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" to="/about">
+                About
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" to="/contact">
+                Contact
+              </Link>
+            </li>
 
-              <li class="nav-item mx-5">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                  <button
-                    class="btn fs-5 py-2 px-3 text-white me-md-2"
-                    style={{ backgroundColor: "#e7077d" }}
-                    type="button"
-                  >
-                    Submit Script
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+            <li class="nav-item mx-5">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button
+                  class="btn fs-5 py-2 px-4 py-3 text-white m-md-2"
+                  style={{ backgroundColor: "#e7077d" }}
+                  type="button"
+                >
+                  Submit Script
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div
-        id="carouselExampleControls"
-        class="carousel slide"
+        // style={{ height: "700px" }}
+        id="carouselExampleCaptions"
+        class="carousel slide w-100"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div
-              style={{
-                backgroundImage: `url("./images/20230523_225152.jpg")`,
-                opacity: 0.9,
-              }}
-              class="d-flex row justify-content-end py-5"
-            >
-              <div class="col-md-2"></div>
-              <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                <div class="row">
-                  <h1 class="text-white m-3 col-6">
-                    Nigeria's Premium Online Casting Platforms
-                  </h1>
+        <div
+        
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" >
+            <div class="carousel-item active" >
+              <div
+                style={{
+                  backgroundImage: `url("./images/1.jpg")`,
+                  opacity: 0.9
+                }}
+                class="d-flex row justify-content-end py-5"
+              >
+                <div class="col-md-2"></div>
+                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
+                  <div class="row">
+                    <h1 class="text-white m-3 col-8">
+                      Nigeria's Premium Online Casting Platforms
+                    </h1>
+                  </div>
+                  <div class="d-grid row-4 gap-2 d-md-block">
+                    <button
+                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
+                      type="button"
+                    >
+                      I am an anctor
+                    </button>
+                    <button
+                      type="button"
+                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
+                    >
+                      I am a casting Director
+                    </button>
+                  </div>
                 </div>
-                <div class="d-grid row-4 gap-2 d-md-block">
-                  <button
-                    class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                    type="button"
-                  >
-                    I am an anctor
-                  </button>
-                  <button
-                    type="button"
-                    class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                  >
-                    I am a casting Director
-                  </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style={{
+                  backgroundImage: `url("./images/2.jpg")`,
+                  opacity: 0.9
+                }}
+                class="d-flex row justify-content-end py-5"
+              >
+                <div class="col-md-2"></div>
+                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
+                  <div class="row">
+                    <h1 class="text-white m-3 col-8">
+                      Nigeria's Premium Online Casting Platforms
+                    </h1>
+                  </div>
+                  <div class="d-grid row-4 gap-2 d-md-block">
+                    <button
+                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
+                      type="button"
+                    >
+                      I am an anctor
+                    </button>
+                    <button
+                      type="button"
+                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
+                    >
+                      I am a casting Director
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style={{
+                  backgroundImage: `url("./images/3.jpg")`,
+                  opacity: 0.9,
+                }}
+                class="d-flex row justify-content-end py-5"
+              >
+                <div class="col-md-2"></div>
+                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
+                  <div class="row">
+                    <h1 class="text-white m-3 col-8">
+                      Nigeria's Premium Online Casting Platforms
+                    </h1>
+                  </div>
+                  <div class="d-grid row-4 gap-2 d-md-block">
+                    <button
+                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
+                      type="button"
+                    >
+                      I am an anctor
+                    </button>
+                    <button
+                      type="button"
+                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
+                    >
+                      I am a casting Director
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-      <form ref={form} onSubmit={sendEmail} class="row g-3 col-7 mx-auto m-5">
+      <form ref={form} onSubmit={sendEmail} class="row g-3 col-8 mx-auto m-4">
         <div class="col-md-6">
           <label for="inputFirstName4" class="form-label">
             First Name
@@ -251,48 +314,50 @@ function Contact() {
       </div>
 
       <div class="row w-90 mx-auto mt-4 mb-5">
-        <div class="col-sm-4">
-          <div class="card mb-4" style={{ backgroundColor: "indigo" }}>
-            <div class="card-body text-center">
+        <div class="col-sm-4 py-3">
+          <div class="card mb-4 py-3" style={{ backgroundColor: "indigo" }}>
+            <div class="card-body text-center py-3">
               <p>
                 <i
-                  class="fa-solid fa-computer fs-1"
+                  class="fa-solid fs-1 fa-computer py-3"
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white">Jump the Queue</h5>
-              <p class="card-text text-white">
+              <h5 class="card-title text-white py-3">Jump the Queue</h5>
+              <p class="card-text text-white py-3">
                 Create an account in Minutes, get visible ....
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card bg-info mb-4">
-            <div class="card-body text-center">
+        <div class="col-sm-4 py-3">
+          <div class="card bg-info mb-4 py-3">
+            <div class="card-body text-center py-3">
               <p>
-                <i class="fa-solid fa-people" style={{ color: "#ffffff" }}></i>
+              <i class="fa-solid fs-1 fa-person py-3"style={{color: "#ffffff",}}></i>
+         
+        
               </p>
-              <h5 class="card-title text-white">
+              <h5 class="card-title text-white py-3">
                 Get Represented by the Experts
               </h5>
-              <p class="card-text text-white">
+              <p class="card-text text-white py-3">
                 In need of an agent or manager?
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card mb-4" style={{ backgroundColor: "#e7077d" }}>
-            <div class="card-body text-center">
+        <div class="col-sm-4 py-3">
+          <div class="card mb-4 py-3" style={{ backgroundColor: "#e7077d" }}>
+            <div class="card-body text-center py-3">
               <p>
                 <i
-                  class="fa-solid fa-layer-group fs-1"
+                  class="fa-solid fs-1 fa-layer-group py-3"
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white">Cut through the Cluster</h5>
-              <p class="card-text text-white">
+              <h5 class="card-title text-white py-3">Cut through the Cluster</h5>
+              <p class="card-text text-white py-3">
                 Find the perfect talent with ease and convenience.
               </p>
             </div>
@@ -306,7 +371,7 @@ function Contact() {
             <div class="container">
               <div class="row align-items-center justify-content-md-between">
                 <div class="col-md-6">
-                  <ul class="nav nav-footer">
+                  <ul class="nav nav-footer text-center justify-content-center">
                     <li class="nav-item">
                       {" "}
                       <Link
@@ -336,12 +401,12 @@ function Contact() {
                       </Link>
                     </li>
                   </ul>
-                  <div class="copyright text-white">
+                  <div class="copyright text-center text-white">
                     Copyright © 2023 Cast.i.ng All Rights Reserved
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <ul class="nav nav-footer justify-content-end">
+                  <ul class="nav nav-footer mt-3 justify-content-center">
                     <li class="nav-item">
                       <Link
                         to="http://"
@@ -349,7 +414,7 @@ function Contact() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-twitter"
+                          class="fa-brands fs-1 fa-twitter"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>
@@ -361,7 +426,7 @@ function Contact() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-instagram"
+                          class="fa-brands fs-1 fa-instagram"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>
@@ -373,7 +438,7 @@ function Contact() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-linkedin-in"
+                          class="fa-brands fs-1 fa-linkedin-in"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>
@@ -385,7 +450,7 @@ function Contact() {
                         class="badge badge-circle badge-soci mr-3"
                       >
                         <i
-                          class="fa-brands fa-facebook-f"
+                          class="fa-brands fs-1 fa-facebook-f"
                           style={{ color: "#ffffff" }}
                         ></i>
                       </Link>

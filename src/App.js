@@ -4,6 +4,7 @@ import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
 import Submit from "./Submit";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/submit" element={<Submit/>}></Route>
+        <Route path="/footer" element={<Footer/>}></Route>
       </Routes>
     </Router>
   );

@@ -1,15 +1,10 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
-
-
 function Submit() {
-
-
- 
   return (
     <>
-     <Navbar/>
+      <Navbar />
       <div
         // style={{ height: "700px" }}
         id="carouselExampleCaptions"
@@ -17,17 +12,16 @@ function Submit() {
         data-bs-ride="carousel"
       >
         <div
-        
           id="carouselExampleControls"
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner" >
-            <div class="carousel-item active" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
               <div
                 style={{
                   backgroundImage: `url("./images/1.jpg")`,
-                  opacity: 0.9
+                  opacity: 0.9,
                 }}
                 class="d-flex row justify-content-end py-5"
               >
@@ -59,7 +53,7 @@ function Submit() {
               <div
                 style={{
                   backgroundImage: `url("./images/2.jpg")`,
-                  opacity: 0.9
+                  opacity: 0.9,
                 }}
                 class="d-flex row justify-content-end py-5"
               >
@@ -140,11 +134,19 @@ function Submit() {
           </button>
         </div>
       </div>
-                <div class="mx-auto col-9" style={{width: "35rem"}}>
-
-      <iframe  title="googleform" src="https://docs.google.com/forms/d/e/1FAIpQLSfONZdeshvgOX9zVgqiuaOtaF8dHQZ28jy2KX9sJtfWjMtFFA/viewform?embedded=true" width="640" height="1391" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-   
-                </div>
+      <div class="mx-auto col-md-9" style={{ width: "35rem" }}>
+        <iframe
+          title="googleform"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfONZdeshvgOX9zVgqiuaOtaF8dHQZ28jy2KX9sJtfWjMtFFA/viewform?embedded=true"
+          width="640"
+          height="1391"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
 
       <div class="col-md-4 mx-auto border rounded pb-5">
         <div class="card-body text-center">
@@ -204,7 +206,10 @@ function Submit() {
           <div class="card bg-info mb-4 py-3">
             <div class="card-body text-center py-3">
               <p>
-              <i class="fa-solid fs-1 fa-person py-3"style={{color: "#ffffff",}}></i>
+                <i
+                  class="fa-solid fs-1 fa-person py-3"
+                  style={{ color: "#ffffff" }}
+                ></i>
               </p>
               <h5 class="card-title text-white py-3">
                 Get Represented by the Experts
@@ -224,7 +229,9 @@ function Submit() {
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white py-3">Cut through the Cluster</h5>
+              <h5 class="card-title text-white py-3">
+                Cut through the Cluster
+              </h5>
               <p class="card-text text-white py-3">
                 Find the perfect talent with ease and convenience.
               </p>
@@ -242,10 +249,7 @@ function Submit() {
                   <ul class="nav nav-footer text-center justify-content-center">
                     <li class="nav-item">
                       {" "}
-                      <Link
-                        to="/"
-                        class="nav-link text-white px-5 text-white"
-                      >
+                      <Link to="/" class="nav-link text-white px-5 text-white">
                         {" "}
                         Home
                       </Link>

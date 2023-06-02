@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #95a4c18f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 767px) {
+  #bgOne{
+    background-image: none;
+  }
+  #bgOne::after{
+    background-image: url(../public/images/4.jpg);
+  }
+  
 }

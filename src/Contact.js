@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Navbar from "./Navbar";
 
 function Contact() {
   const form = useRef();
@@ -26,187 +27,130 @@ function Contact() {
   };
   return (
     <>
-     <nav class="navbar navbar-expand-lg navbar-light navbar-transparent" >
-        <div class="container-fluid align-items-center d-flex justify-content-between" >
-          <img 
-            src="./images/logo.jpg"
-            className="rounded-circle"
-            style={{ width: "70px", marginLeft: "4rem"}}
-            alt=""
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mx-5 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" aria-current="page" to="/">
-                Home
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" to="/about">
-                About
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link text-dark fs-5 border-bottom border-danger m-2" to="/contact">
-                Contact
-              </Link>
-            </li>
-
-            <li class="nav-item mx-5">
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button
-                  class="btn fs-5 py-2 px-4 py-3 text-white m-md-2"
-                  style={{ backgroundColor: "#e7077d" }}
-                  type="button"
-                >
-                  Submit Script
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div
-        // style={{ height: "700px" }}
-        id="carouselExampleCaptions"
-        class="carousel slide w-100"
+     <Navbar/>
+     <div
+        
+        id="carouselExampleControls"
+        class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div
-        
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner" >
-            <div class="carousel-item active" >
-              <div
-                style={{
-                  backgroundImage: `url("./images/1.jpg")`,
-                  opacity: 0.9
-                }}
-                class="d-flex row justify-content-end py-5"
-              >
-                <div class="col-md-2"></div>
-                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                  <div class="row">
-                    <h1 class="text-white m-3 col-8">
-                      Nigeria's Premium Online Casting Platforms
-                    </h1>
-                  </div>
-                  <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
-                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                      type="button"
-                    >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
-                  </div>
+        <div class="carousel-inner" >
+          <div class="carousel-item active" >
+            <div
+              style={{
+                backgroundImage: `url("./images/1.jpg")`,
+                opacity: 0.9
+              }}
+              class="d-flex row justify-content-end py-5"
+            >
+              <div class="col-md-2"></div>
+              <div class="col-md-8 py-5" style={{ opacity: 1 }}>
+                <div class="row">
+                  <h1 class="text-white m-3 col-8">
+                    Nigeria's Premium Content Creation Platform
+                  </h1>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                style={{
-                  backgroundImage: `url("./images/2.jpg")`,
-                  opacity: 0.9
-                }}
-                class="d-flex row justify-content-end py-5"
-              >
-                <div class="col-md-2"></div>
-                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                  <div class="row">
-                    <h1 class="text-white m-3 col-8">
-                      Nigeria's Premium Online Casting Platforms
-                    </h1>
-                  </div>
-                  <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
-                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                      type="button"
-                    >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                style={{
-                  backgroundImage: `url("./images/3.jpg")`,
-                  opacity: 0.9,
-                }}
-                class="d-flex row justify-content-end py-5"
-              >
-                <div class="col-md-2"></div>
-                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                  <div class="row">
-                    <h1 class="text-white m-3 col-8">
-                      Nigeria's Premium Online Casting Platforms
-                    </h1>
-                  </div>
-                  <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
-                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                      type="button"
-                    >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
-                  </div>
+                <div class="d-grid row-4 gap-2 d-md-block">
+                  <button
+                  to="/submit"
+                    class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
+                    type="button"
+                  >
+                    I am a Scriptwriter
+                  </button>
+                  <button
+                    type="button"
+                    class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
+                  >
+                    I am an Actor
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <div
+              style={{
+                backgroundImage: `url("./images/2.jpg")`,
+                opacity: 0.9
+              }}
+              class="d-flex row justify-content-end py-5"
+            >
+              <div class="col-md-2"></div>
+              <div class="col-md-8 py-5" style={{ opacity: 1 }}>
+                <div class="row">
+                  <h1 class="text-white m-3 col-8">
+                  Nigeria's Premium Content Creation Platform
+                  </h1>
+                </div>
+                <div class="d-grid row-4 gap-2 d-md-block">
+                  <button
+                    class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
+                    type="button"
+                  >
+                     I am a Scriptwriter
+                  </button>
+                  <button
+                    type="button"
+                    class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
+                  >
+                    I am an Actor
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              style={{
+                backgroundImage: `url("./images/3.jpg")`,
+                opacity: 0.9,
+              }}
+              class="d-flex row justify-content-end py-5"
+            >
+              <div class="col-md-2"></div>
+              <div class="col-md-8 py-5" style={{ opacity: 1 }}>
+                <div class="row">
+                  <h1 class="text-white m-3 col-8">
+                  Nigeria's Premium Content Creation Platform
+                  </h1>
+                </div>
+                <div class="d-grid row-4 gap-2 d-md-block">
+                  <button
+                    class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
+                    type="button"
+                  >
+                    I am a Scriptwriter
+                  </button>
+                  <button
+                    type="button"
+                    class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
+                  >
+                    I am an Actor
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
       <form ref={form} onSubmit={sendEmail} class="row g-3 col-8 mx-auto m-4">
@@ -260,6 +204,9 @@ function Contact() {
             placeholder="Phone Number"
           />
         </div>
+        <div>
+      
+      </div>
         <div class="form-floating">
           <textarea
             name="message"
@@ -270,12 +217,14 @@ function Contact() {
           ></textarea>
           <label for="floatingTextarea2">Message</label>
         </div>
+       
         <div class="d-grid gap-2 col-12 mx-auto">
           <button class="btn btn-primary" type="submit">
             Send
           </button>
         </div>
       </form>
+
       <div class="col-md-4 mx-auto border rounded pb-5">
         <div class="card-body text-center">
           <h2 class="mt-5 col-p slider-head">Contact Details</h2>
@@ -323,8 +272,8 @@ function Contact() {
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white py-3">Jump the Queue</h5>
-              <p class="card-text text-white py-3">
+              <h5 class="card-title text-white py-3 fs-2">Jump the Queue</h5>
+              <p class="card-text text-white py-3 fs-4">
                 Create an account in Minutes, get visible ....
               </p>
             </div>
@@ -338,10 +287,10 @@ function Contact() {
          
         
               </p>
-              <h5 class="card-title text-white py-3">
+              <h5 class="card-title text-white py-3 fs-2">
                 Get Represented by the Experts
               </h5>
-              <p class="card-text text-white py-3">
+              <p class="card-text text-white py-3 fs-4">
                 In need of an agent or manager?
               </p>
             </div>
@@ -356,8 +305,8 @@ function Contact() {
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white py-3">Cut through the Cluster</h5>
-              <p class="card-text text-white py-3">
+              <h5 class="card-title text-white py-3 fs-2">Cut through the Cluster</h5>
+              <p class="card-text text-white py-3 fs-4">
                 Find the perfect talent with ease and convenience.
               </p>
             </div>
@@ -365,7 +314,7 @@ function Contact() {
         </div>
       </div>
 
-      <footer style={{ backgroundColor: "indigo" }}>
+      <footer style={{ backgroundColor: "indigo" , marginTop: "40px" }}>
         <section class="section p-5">
           <div>
             <div class="container">
@@ -375,8 +324,8 @@ function Contact() {
                     <li class="nav-item">
                       {" "}
                       <Link
-                        to="http://"
-                        class="nav-link text-white px-5 text-white"
+                        to="/"
+                        class="nav-link text-white px-5 text-white fs-4"
                       >
                         {" "}
                         Home
@@ -385,8 +334,8 @@ function Contact() {
                     <li class="nav-item">
                       {" "}
                       <Link
-                        to="about.html"
-                        class="nav-link text-white px-5 text-white"
+                        to="/about"
+                        class="nav-link text-white px-5 text-white fs-4"
                       >
                         About
                       </Link>
@@ -394,15 +343,15 @@ function Contact() {
                     <li class="nav-item ">
                       {" "}
                       <Link
-                        to="http://"
-                        class="nav-link text-white px-5 text-white"
+                        to="/contact"
+                        class="nav-link text-white px-5 text-white fs-4"
                       >
                         Contact Us
                       </Link>
                     </li>
                   </ul>
-                  <div class="copyright text-center text-white">
-                    Copyright © 2023 Cast.i.ng All Rights Reserved
+                  <div class="copyright text-center text-white fs-4">
+                    Copyright ©2023 i2Reality All Rights Reserved
                   </div>
                 </div>
                 <div class="col-md-6">

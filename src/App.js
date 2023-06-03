@@ -5,6 +5,7 @@ import Home from "./Home";
 import Contact from "./Contact";
 import Submit from "./Submit";
 import Footer from "./Footer";
+import Carousel from "./Carousel";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/submit" element={<Submit/>}></Route>
         <Route path="/footer" element={<Footer/>}></Route>
+        <Route path="/carousel" element={<Carousel/>}></Route>
       </Routes>
     </Router>
   );

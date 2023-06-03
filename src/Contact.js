@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Carousel from "./Carousel";
 
 function Contact() {
   const form = useRef();
@@ -28,130 +30,7 @@ function Contact() {
   return (
     <>
      <Navbar/>
-     <div
-        
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner" >
-          <div class="carousel-item active" >
-            <div
-              style={{
-                backgroundImage: `url("./images/1.jpg")`,
-                opacity: 0.9
-              }}
-              class="d-flex row justify-content-end py-5"
-            >
-              <div class="col-md-2"></div>
-              <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                <div class="row">
-                  <h1 class="text-white m-3 col-8">
-                    Nigeria's Premium Content Creation Platform
-                  </h1>
-                </div>
-                <div class="d-grid row-4 gap-2 d-md-block">
-                  <button
-                  to="/submit"
-                    class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                    type="button"
-                  >
-                    I am a Scriptwriter
-                  </button>
-                  <button
-                    type="button"
-                    class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                  >
-                    I am an Actor
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div
-              style={{
-                backgroundImage: `url("./images/2.jpg")`,
-                opacity: 0.9
-              }}
-              class="d-flex row justify-content-end py-5"
-            >
-              <div class="col-md-2"></div>
-              <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                <div class="row">
-                  <h1 class="text-white m-3 col-8">
-                  Nigeria's Premium Content Creation Platform
-                  </h1>
-                </div>
-                <div class="d-grid row-4 gap-2 d-md-block">
-                  <button
-                    class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                    type="button"
-                  >
-                     I am a Scriptwriter
-                  </button>
-                  <button
-                    type="button"
-                    class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                  >
-                    I am an Actor
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div
-              style={{
-                backgroundImage: `url("./images/3.jpg")`,
-                opacity: 0.9,
-              }}
-              class="d-flex row justify-content-end py-5"
-            >
-              <div class="col-md-2"></div>
-              <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                <div class="row">
-                  <h1 class="text-white m-3 col-8">
-                  Nigeria's Premium Content Creation Platform
-                  </h1>
-                </div>
-                <div class="d-grid row-4 gap-2 d-md-block">
-                  <button
-                    class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                    type="button"
-                  >
-                    I am a Scriptwriter
-                  </button>
-                  <button
-                    type="button"
-                    class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                  >
-                    I am an Actor
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+     <Carousel/>
 
       <form ref={form} onSubmit={sendEmail} class="row g-3 col-8 mx-auto m-4">
         <div class="col-md-6">
@@ -314,103 +193,7 @@ function Contact() {
         </div>
       </div>
 
-      <footer style={{ backgroundColor: "indigo" , marginTop: "40px" }}>
-        <section class="section p-5">
-          <div>
-            <div class="container">
-              <div class="row align-items-center justify-content-md-between">
-                <div class="col-md-6">
-                  <ul class="nav nav-footer text-center justify-content-center">
-                    <li class="nav-item">
-                      {" "}
-                      <Link
-                        to="/"
-                        class="nav-link text-white px-5 text-white fs-4"
-                      >
-                        {" "}
-                        Home
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      {" "}
-                      <Link
-                        to="/about"
-                        class="nav-link text-white px-5 text-white fs-4"
-                      >
-                        About
-                      </Link>
-                    </li>
-                    <li class="nav-item ">
-                      {" "}
-                      <Link
-                        to="/contact"
-                        class="nav-link text-white px-5 text-white fs-4"
-                      >
-                        Contact Us
-                      </Link>
-                    </li>
-                  </ul>
-                  <div class="copyright text-center text-white fs-4">
-                    Copyright ©2023 i2Reality All Rights Reserved
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <ul class="nav nav-footer mt-3 justify-content-center">
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-twitter"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-instagram"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-linkedin-in"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-facebook-f"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </footer>
+      <Footer/>
     </>
   );
 }

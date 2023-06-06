@@ -7,7 +7,7 @@ import Carousel from "./Carousel";
 
 function Contact() {
   const form = useRef();
-
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -38,6 +38,7 @@ function Contact() {
             First Name
           </label>
           <input
+            required
             name="firstname"
             type="text"
             class="form-control"
@@ -51,6 +52,7 @@ function Contact() {
             Last Name
           </label>
           <input
+            required
             name="lastname"
             placeholder="Last name"
             aria-label="Last name"
@@ -64,6 +66,7 @@ function Contact() {
             Email
           </label>
           <input
+            required
             name="email"
             type="email"
             placeholder="Email Address"
@@ -76,6 +79,7 @@ function Contact() {
             Phone
           </label>
           <input
+            required
             name="phone"
             type="text"
             class="form-control"
@@ -88,6 +92,7 @@ function Contact() {
       </div>
         <div class="form-floating">
           <textarea
+            required
             name="message"
             class="form-control"
             placeholder="Leave a comment here"
@@ -98,9 +103,14 @@ function Contact() {
         </div>
        
         <div class="d-grid gap-2 col-12 mx-auto">
-          <button class="btn btn-primary" type="submit">
-            Send
-          </button>
+        <Link
+                  to="/success"
+                  class="btn btn-primary fs-5 py-2 px-4 py-3 text-white m-md-2"
+                  onclick="Success()"
+                  type="submit"
+                >
+                  Send
+                </Link>
         </div>
       </form>
 
@@ -162,7 +172,7 @@ function Contact() {
           <div class="card bg-info mb-4 py-3">
             <div class="card-body text-center py-3">
               <p>
-              <i class="fa-solid fs-1 fa-person py-3"style={{color: "#ffffff",}}></i>
+              <i class="fa-solid fs-1 fa-person py-3"style={{color: "#ffffff"}}></i>
          
         
               </p>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer"
 
 function Submit() {
   return (
@@ -21,7 +22,7 @@ function Submit() {
               <div
                 style={{
                   backgroundImage: `url("./images/1.jpg")`,
-                  opacity: 0.9,
+                  opacity: 0.9
                 }}
                 class="d-flex row justify-content-end py-5"
               >
@@ -135,17 +136,9 @@ function Submit() {
         </div>
       </div>
       <div class="mx-auto col-md-9" style={{ width: "35rem" }}>
-        <iframe
-          title="googleform"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfONZdeshvgOX9zVgqiuaOtaF8dHQZ28jy2KX9sJtfWjMtFFA/viewform?embedded=true"
-          width="640"
-          height="1391"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
+      <iframe title="forms" src="https://docs.google.com/forms/d/e/1FAIpQLSc_ILQ4ZphzPqZo_EOsQmvwLwezVY9wirvsdG8uaSMVjsuB0A/viewform?embedded=true"        width="400" height="1256" frameborder="0" marginheight="0" marginwidth="0">
+        Loading…
+      </iframe>
       </div>
 
       <div class="col-md-4 mx-auto border rounded pb-5">
@@ -240,100 +233,7 @@ function Submit() {
         </div>
       </div>
 
-      <footer style={{ backgroundColor: "indigo", marginTop: "40px" }}>
-        <section class="section p-5">
-          <div>
-            <div class="container">
-              <div class="row align-items-center justify-content-md-between">
-                <div class="col-md-6">
-                  <ul class="nav nav-footer text-center justify-content-center">
-                    <li class="nav-item">
-                      {" "}
-                      <Link to="/" class="nav-link text-white px-5 text-white">
-                        {" "}
-                        Home
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      {" "}
-                      <Link
-                        to="/about"
-                        class="nav-link text-white px-5 text-white"
-                      >
-                        About
-                      </Link>
-                    </li>
-                    <li class="nav-item ">
-                      {" "}
-                      <Link
-                        to="/contact"
-                        class="nav-link text-white px-5 text-white"
-                      >
-                        Contact Us
-                      </Link>
-                    </li>
-                  </ul>
-                  <div class="copyright text-center text-white">
-                    Copyright © 2023 Cast.i.ng All Rights Reserved
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <ul class="nav nav-footer mt-3 justify-content-center">
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-twitter"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-instagram"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-linkedin-in"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link
-                        to="http://"
-                        target="_blank"
-                        class="badge badge-circle badge-soci mr-3"
-                      >
-                        <i
-                          class="fa-brands fs-1 fa-facebook-f"
-                          style={{ color: "#ffffff" }}
-                        ></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </footer>
+     <Footer/>
     </>
   );
 }

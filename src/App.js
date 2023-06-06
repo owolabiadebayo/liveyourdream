@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Submit from "./Submit";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
+import Success from "./Success"
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
         <Route path="/submit" element={<Submit/>}></Route>
         <Route path="/footer" element={<Footer/>}></Route>
         <Route path="/carousel" element={<Carousel/>}></Route>
+        <Route path="/success" element={<Success/>}></Route>
       </Routes>
     </Router>
   );
 }
-// https://docs.google.com/forms/d/e/1FAIpQLScvbLDW4Do4v2U6oHeWkrKZP1lNxB28eyDyfHuCiAaA8cU1gQ/viewform?usp=pp_url
+
 export default App;

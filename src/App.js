@@ -6,7 +6,8 @@ import Contact from "./Contact";
 import Submit from "./Submit";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
-import Success from "./Success"
+import Success from "./Success";
+import Failure from "./Failure";
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/submit" element={<Submit/>}></Route>
-        <Route path="/footer" element={<Footer/>}></Route>
-        <Route path="/carousel" element={<Carousel/>}></Route>
-        <Route path="/success" element={<Success/>}></Route>
+        <Route path="/submit" element={<Submit />}></Route>
+        <Route path="/footer" element={<Footer />}></Route>
+        <Route path="/carousel" element={<Carousel />}></Route>
+        <Route path="/success" element={<Success />}></Route>
+        <Route path="/failure" element={<Failure />}></Route>
       </Routes>
     </Router>
   );

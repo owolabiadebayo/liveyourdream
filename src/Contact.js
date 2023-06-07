@@ -1,36 +1,42 @@
 import { Link } from "react-router-dom";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
   const form = useRef();
-  
+  const Navigate = useNavigate();
+  useEffect(() => {
+    document.title = "i2reality | Contact";
+  }, []);
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_cfd64su",
-        "template_9w5yp69",
+        "service_srgd2nw",
+        "template_swfgl16",
         form.current,
-        "12t1onrHRMVF560yD"
+        "tZteYUm4XKpANHYHd"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (res) => {
+          if (res.status === 200) {
+            Navigate("/success");
+          }
         },
-        (error) => {
-          console.log(error.text);
+        (err) => {
+          Navigate("/failure");
         }
       );
   };
   return (
     <>
-     <Navbar/>
-     <Carousel/>
+      <Navbar />
+      <Carousel />
 
       <form ref={form} onSubmit={sendEmail} class="row g-3 col-8 mx-auto m-4">
         <div class="col-md-6">
@@ -87,9 +93,7 @@ function Contact() {
             placeholder="Phone Number"
           />
         </div>
-        <div>
-      
-      </div>
+        <div></div>
         <div class="form-floating">
           <textarea
             required
@@ -101,16 +105,14 @@ function Contact() {
           ></textarea>
           <label for="floatingTextarea2">Message</label>
         </div>
-       
+
         <div class="d-grid gap-2 col-12 mx-auto">
-        <Link
-                  to="/success"
-                  class="btn btn-primary fs-5 py-2 px-4 py-3 text-white m-md-2"
-                  onclick="Success()"
-                  type="submit"
-                >
-                  Send
-                </Link>
+          <input
+            class="btn btn-primary fs-5 py-2 px-4 py-3 text-white m-md-2"
+            onclick="Success()"
+            type="submit"
+            value="Send"
+          />
         </div>
       </form>
 
@@ -172,9 +174,10 @@ function Contact() {
           <div class="card bg-info mb-4 py-3">
             <div class="card-body text-center py-3">
               <p>
-              <i class="fa-solid fs-1 fa-person py-3"style={{color: "#ffffff"}}></i>
-         
-        
+                <i
+                  class="fa-solid fs-1 fa-person py-3"
+                  style={{ color: "#ffffff" }}
+                ></i>
               </p>
               <h5 class="card-title text-white py-3 fs-2">
                 Get Represented by the Experts
@@ -194,7 +197,9 @@ function Contact() {
                   style={{ color: "#ffffff" }}
                 ></i>
               </p>
-              <h5 class="card-title text-white py-3 fs-2">Cut through the Cluster</h5>
+              <h5 class="card-title text-white py-3 fs-2">
+                Cut through the Cluster
+              </h5>
               <p class="card-text text-white py-3 fs-4">
                 Find the perfect talent with ease and convenience.
               </p>
@@ -203,7 +208,7 @@ function Contact() {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }

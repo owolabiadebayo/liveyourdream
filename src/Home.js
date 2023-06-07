@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -6,14 +6,17 @@ import Carousel from "./Carousel";
 
 import "./App.css";
 function Home() {
+  useEffect(() => {
+    document.title = "i2reality | Home";
+  }, []);
   return (
     <>
       {" "}
       <Navbar />
-      <Carousel/>
+      <Carousel />
       <div
         class="card text-center rounded-0"
-        style={{ backgroundColor: "#e7077d", paddingBottom: "60px"}}
+        style={{ backgroundColor: "#e7077d", paddingBottom: "60px" }}
       >
         <div
           class="card-body d-grid align-items-center col-md-12 mx-auto py-5"
@@ -277,8 +280,7 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <Footer/>
+      <Footer />
     </>
   );
 }

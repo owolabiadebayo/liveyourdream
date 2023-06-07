@@ -1,29 +1,37 @@
-import React from "react"
-import "./App.css"
-import { Link } from "react-router-dom"
+import React, { useEffect } from "react";
+import "./App.css";
+import { Link } from "react-router-dom";
+import { FcHome } from "react-icons/fc";
 
 function Success() {
-    return (
-      <>
-       <div class="container-fluid col-md-6">
-            <div class="popup col-10" id="popup">
-                <img class="d-flex justify-centent-center mx-auto" width="48" height="100" src="https://img.icons8.com/fluency/48/000000/checked.png" alt="checked"/>
-                <h2 class="text-center">Received!</h2>
-                <p class="text-center">Message sent to your Email. Thanks!</p>
+  useEffect(() => {
+    document.title = "i2reality | Success";
+  }, []);
+  return (
+    <>
+      <div class="container-fluid col-md-6">
+        <div class="popup col-10" id="popup">
+          <img
+            class="d-flex justify-centent-center mx-auto"
+            width="48"
+            height="100"
+            src="https://img.icons8.com/fluency/48/000000/checked.png"
+            alt="checked"
+          />
+          <h2 class="text-center">Received!</h2>
+          <p class="text-center">
+            {" "}
+            Your application has been received, We’re thrilled to hear from you.
+            you'll receive a short message soon in your email address for next
+            step regarding your application. Cheers
+          </p>
 
-                <p class="text-danger lead text-center fs-6">Click 'OK' to return</p>
-              
-                <Link
-                  to="/"
-                  class="btn"
-                  type="button"
-                  id="btnn"
-                >
-                  OK
-                </Link>
-            </div>
+          <Link to="/" class="lead btn text-danger " type="button" id="btnn">
+            Home <FcHome size={35} />
+          </Link>
         </div>
-      </>
-      )
-    }
-    export default Success
+      </div>
+    </>
+  );
+}
+export default Success;

@@ -7,9 +7,11 @@ import Footer from "./Footer"
 function About() {
   return (
     <>
-   <Navbar/>
+
+   <Navbar id="top"/>
    <Carousel/>
-      <div class="card mb-5 mx-auto mt-5 border-0" style={{ maxWidth: "80%" }}>
+
+      <div  class="card mb-5 mx-auto mt-5 border-0" style={{ maxWidth: "80%" }}>
         <div class="row gy-5 d-flex justify-content-center mb-5">
           <div class="col-md-6 mx-auto" style={{width:"350px"}}>
             <img
@@ -73,7 +75,7 @@ function About() {
           <h2 class="mt-5 col-p slider-head">Contact Details</h2>
           <p>Feel free to contact us with questions</p>
           <div>
-            <b>Email:</b>info@example.com.ng
+            <b>Email:</b>info@i2Reality.com
           </div>
           <br />
           <b>Phone:</b> "+123-456-7890"
@@ -188,6 +190,7 @@ function About() {
           </div>
         </div>
       </div>
+      <a href="#top" class="btn btn-outline-danger col-3 mx-auto d-flex justify-content-center">Top Page ⬆</a>
     <Footer/>
       
     </>

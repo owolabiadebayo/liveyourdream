@@ -14,7 +14,6 @@ function Contact() {
   }, []);
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_srgd2nw",

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 
 function Carousel() {
   return (
@@ -31,18 +33,13 @@ function Carousel() {
                     </h1>
                   </div>
                   <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
+                    <Link
+                    to="/submit"
                       class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
                       type="button"
                     >
-                     I am  a Scriptwriter
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am an anctor
-                    </button>
+                     I Am a Creative
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -63,18 +60,13 @@ function Carousel() {
                     </h1>
                   </div>
                   <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
+                  <Link
+                    to="/submit"
                       class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
                       type="button"
                     >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
+                     I Am a Creative
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -95,18 +87,13 @@ function Carousel() {
                     </h1>
                   </div>
                   <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
+                  <Link
+                    to="/submit"
                       class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
                       type="button"
                     >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
+                     I Am a Creative
+                    </Link>
                   </div>
                 </div>
               </div>

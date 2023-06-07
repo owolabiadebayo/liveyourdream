@@ -1,142 +1,16 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer"
+import Carousel from "./Carousel"
+
 
 function Submit() {
   return (
     <>
       <Navbar />
-      <div
-        // style={{ height: "700px" }}
-        id="carouselExampleCaptions"
-        class="carousel slide w-100"
-        data-bs-ride="carousel"
-      >
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div
-                style={{
-                  backgroundImage: `url("./images/1.jpg")`,
-                  opacity: 0.9
-                }}
-                class="d-flex row justify-content-end py-5"
-              >
-                <div class="col-md-2"></div>
-                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                  <div class="row">
-                    <h1 class="text-white m-3 col-8">
-                      Nigeria's Premium Online Casting Platforms
-                    </h1>
-                  </div>
-                  <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
-                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                      type="button"
-                    >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                style={{
-                  backgroundImage: `url("./images/2.jpg")`,
-                  opacity: 0.9,
-                }}
-                class="d-flex row justify-content-end py-5"
-              >
-                <div class="col-md-2"></div>
-                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                  <div class="row">
-                    <h1 class="text-white m-3 col-8">
-                      Nigeria's Premium Online Casting Platforms
-                    </h1>
-                  </div>
-                  <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
-                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                      type="button"
-                    >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                style={{
-                  backgroundImage: `url("./images/3.jpg")`,
-                  opacity: 0.9,
-                }}
-                class="d-flex row justify-content-end py-5"
-              >
-                <div class="col-md-2"></div>
-                <div class="col-md-8 py-5" style={{ opacity: 1 }}>
-                  <div class="row">
-                    <h1 class="text-white m-3 col-8">
-                      Nigeria's Premium Online Casting Platforms
-                    </h1>
-                  </div>
-                  <div class="d-grid row-4 gap-2 d-md-block">
-                    <button
-                      class="btn m-3 rounded-0 p-3 col-5 btn-info text-white"
-                      type="button"
-                    >
-                      I am an anctor
-                    </button>
-                    <button
-                      type="button"
-                      class="btn m-3 p-3 rounded-0 col-5 btn-outline-light"
-                    >
-                      I am a casting Director
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="mx-auto col-md-9" style={{ width: "35rem" }}>
-      <iframe title="forms" src="https://docs.google.com/forms/d/e/1FAIpQLSc_ILQ4ZphzPqZo_EOsQmvwLwezVY9wirvsdG8uaSMVjsuB0A/viewform?embedded=true"        width="400" height="1256" frameborder="0" marginheight="0" marginwidth="0">
+      <Carousel/>
+      <div >
+      <iframe class="mx-auto col-12" title="forms" src="https://docs.google.com/forms/d/e/1FAIpQLSc_ILQ4ZphzPqZo_EOsQmvwLwezVY9wirvsdG8uaSMVjsuB0A/viewform?embedded=true"   height="1256" frameborder="0" marginheight="0" marginwidth="0">
         Loading…
       </iframe>
       </div>
@@ -146,7 +20,7 @@ function Submit() {
           <h2 class="mt-5 col-p slider-head">Contact Details</h2>
           <p>Feel free to contact us with questions</p>
           <div>
-            <b>Email:</b>info@example.com.ng
+            <b>Email:</b>info@i2Reality.com
           </div>
           <br />
           <b>Phone:</b> "+123-456-7890"
@@ -190,7 +64,7 @@ function Submit() {
               </p>
               <h5 class="card-title text-white py-3">Jump the Queue</h5>
               <p class="card-text text-white py-3">
-                Create an account in Minutes, get visible ....
+                Create an account in Minutes, get visible...
               </p>
             </div>
           </div>
@@ -232,7 +106,6 @@ function Submit() {
           </div>
         </div>
       </div>
-
      <Footer/>
     </>
   );

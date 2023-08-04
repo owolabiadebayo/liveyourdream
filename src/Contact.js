@@ -3,8 +3,8 @@ import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Carousel from "./Carousel";
 import { useNavigate } from "react-router-dom";
+import Carousel2 from "./Carousel2";
 
 function Contact() {
   const form = useRef();
@@ -35,7 +35,7 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <Carousel />
+      <Carousel2 />
 
       <form ref={form} onSubmit={sendEmail} class="row g-3 col-8 mx-auto m-4">
         <div class="col-md-6">
@@ -120,41 +120,44 @@ function Contact() {
           <h2 class="mt-5 col-p slider-head">Contact Details</h2>
           <p>Feel free to contact us with questions</p>
           <div>
-            <b>Email:</b>info@example.com.ng
+            <b>Email:</b>liveyourdream@i2Reality.com
           </div>
-          <br />
-          <b>Phone:</b> "+123-456-7890"
-          <br />
-          <Link to="http://" target="_blank" rel="noopener noreferrer">
-            <i
-              class="fa-brands fs-1 fa-square-facebook mx-2"
-              style={{ color: "#1d3763d5" }}
-            ></i>
-          </Link>
-          <Link to="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href=" https://twitter.com/_i2reality?t=M9P-c8cdmekEYKiC-zuMiw&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i
               class="fa-brands fa-square-twitter fs-1 mx-2"
               style={{ color: "#4287ff" }}
             ></i>
-          </Link>
-          <Link to="http://" target="_blank" rel="noopener noreferrer">
+          </a>
+          <a
+            href="https://www.youtube.com/@i2Reality"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i
-              class="fa-brands fa-linkedin fs-1 mx-2"
+              class="fa-brands fa-youtube fs-1 mx-2"
               style={{ color: "#263d64" }}
             ></i>
-          </Link>
-          <Link to="http://" target="_blank" rel="noopener noreferrer">
+          </a>
+          <a
+            href="https://instagram.com/i2_reality?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i
               class="fa-brands fa-instagram fs-1 mx-2"
               style={{ color: "#ff0000" }}
             ></i>
-          </Link>
+          </a>
         </div>
       </div>
 
       <div class="row w-90 mx-auto mt-4 mb-5">
         <div class="col-sm-4 py-3">
-          <div class="card mb-4 py-3" style={{ backgroundColor: "indigo" }}>
+          <div class="card mb-4 py-3" style={{ backgroundColor: "#3E92CC" }}>
             <div class="card-body text-center py-3">
               <p>
                 <i
@@ -188,7 +191,7 @@ function Contact() {
           </div>
         </div>
         <div class="col-sm-4 py-3">
-          <div class="card mb-4 py-3" style={{ backgroundColor: "#e7077d" }}>
+          <div class="card mb-4 py-3" style={{ backgroundColor: "#3E92CC" }}>
             <div class="card-body text-center py-3">
               <p>
                 <i

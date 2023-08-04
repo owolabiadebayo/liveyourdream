@@ -16,7 +16,7 @@ function Home() {
       <Carousel />
       <div
         class="card text-center rounded-0"
-        style={{ backgroundColor: "#e7077d", paddingBottom: "60px" }}
+        style={{ backgroundColor: "#16324F", paddingBottom: "60px" }}
       >
         <div
           class="card-body d-grid align-items-center col-md-12 mx-auto py-5"
@@ -26,10 +26,12 @@ function Home() {
           <p class="card-text text-white m-0 text-align-center fs-md-6 py-4">
             i2 reality has made talents and art embedded within you very easy to
             come to light. You don't need a connection, you don't need to be
-            taken advantage of, you don't have to be lose moral, you don't have
-            to be a tool, as queen and kings all you need is your creativity and
-            passion...i2 reality will shoulder you to the top. We are here
-            because of you, walk with us, let's experience reality!
+            taken advantage of, we protect your interests, we are focused on
+            building you.
+            <br />
+            All you need is your creativity and passion. i2 reality will
+            shoulder you to the top. We are here because of you. join us today,
+            let's experience reality!
           </p>
           <Link
             to="/submit"
@@ -41,7 +43,7 @@ function Home() {
       </div>
       <div
         class="card text-center rounded-0 py-5"
-        style={{ backgroundColor: "indigo" }}
+        style={{ backgroundColor: "#3E92CC" }}
       >
         <p>
           <i class="fa-solid fs-1 fa-camera" style={{ color: "#ffffff" }}></i>
@@ -50,7 +52,7 @@ function Home() {
       </div>
       <div class="row w-90 mx-auto mt-4 mb-5">
         <div class="col-sm-4 py-3">
-          <div class="card mb-4 py-3" style={{ backgroundColor: "indigo" }}>
+          <div class="card mb-4 py-3" style={{ backgroundColor: "#3E92CC" }}>
             <div class="card-body text-center py-3">
               <p>
                 <i
@@ -84,7 +86,7 @@ function Home() {
           </div>
         </div>
         <div class="col-sm-4 py-3">
-          <div class="card mb-4 py-3" style={{ backgroundColor: "#e7077d" }}>
+          <div class="card mb-4 py-3" style={{ backgroundColor: "#3E92CC" }}>
             <div class="card-body text-center py-3">
               <p>
                 <i
@@ -105,7 +107,7 @@ function Home() {
       <div
         style={{
           height: "450px",
-          backgroundColor: "#95a4c18f",
+          backgroundColor: "#3E92CC",
           marginBottom: "5.5rem",
         }}
         id="testimonialCarousel"
@@ -113,9 +115,7 @@ function Home() {
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <h2 class="text-center text-decoration-underline mb-4">
-            Testimonials
-          </h2>
+          <h2 class="text-center mb-4">Testimonials</h2>
           <div class="carousel-item active">
             <div class="container">
               <div class="row justify-content-center">
@@ -199,12 +199,12 @@ function Home() {
       </div>
       <div
         class="row gy-5 w-100 mx-auto mb-0"
-        style={{ backgroundColor: "#e7077d" }}
+        style={{ backgroundColor: "#3E92CC" }}
       >
         <div class="card mb-5 mx-auto mt-5" style={{ maxWidth: "80%" }}>
           <div
             class="row gy-5 w-100 mx-auto"
-            style={{ backgroundColor: "#e7077d" }}
+            style={{ backgroundColor: "#16324F" }}
           >
             <div class="col-md-4">
               <img
@@ -240,12 +240,12 @@ function Home() {
       </div>
       <div
         class="row gy-5 w-100 mx-auto mt-4"
-        style={{ backgroundColor: "indigo" }}
+        style={{ backgroundColor: "#16324F" }}
       >
         <div class="card mb-3 mx-auto" style={{ maxWidth: "80%" }}>
           <div
             class="row gy-5 w-100 mx-auto"
-            style={{ backgroundColor: "indigo" }}
+            style={{ backgroundColor: "#3E92CC" }}
           >
             <div class="col-md-7">
               <div class="card-body d-grid">
